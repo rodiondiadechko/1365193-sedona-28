@@ -5,6 +5,70 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+      <nav>
+        <ul>
+          <li><a href="blank.html">Информация</a></li>
+          <li><a href="gallery.html">Фото и Видео</a></li>
+          <img src="img/logo.svg">
+          <li><a href="map.html">Карта штата</a></li>
+          <li><a href="hotels.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section style="welcome.css">
+        <img src="img/background-photo.jpg">
+      <!-- расположил background первым, так как по логике
+      далее на него будет накладываться шрифт,
+      как его сюда поместить пока не понял -->
+      </section>
+
+      <section>
+        <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2><br>
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </ul>
+      </section>
+
+      <!-- здесь section с описанием преимуществ
+      еще парочкой бэкграундов и ссылок-->
+
+      <section>
+        <h2>Заинтересовались?<br>
+           Укажите предполагаемые даты поездки,<br>
+            и мы покажем вам лучшие предложения гостиниц в седоне</h2>
+      </section>
+
+      <section>
+        <h2>Поиск гостиницы в седоне</h2><br>
+        <label for="arrival-date">Дата прибытия</label>
+        <input type="date" name="arrival-date" id="arrival-date"><br>
+        <label for="check-in-date">Дата выезда</label>
+        <input type="date" name="check-in-date" id="check-in-date"><br>
+        <label for="adult">Взрослые</label>
+        <input type="number" name="adult" id="adult" min="0" max="10" step="1"><br>
+        <label for="kids">Дети</label>
+        <input type="number" name="kids" id="kids" min="0" max="10" step="1"><br>
+        <input type="button" value="Найти">
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li><a href="searcformforhashtag.url">#VISITSEDONA</a></li>
+        <li><p>ТЕЛ: +7(495) 666-01-66</p></li>
+      </ul>
+      <a href="https://twitter.com/explore">
+        <input type="image" src="img/twitter.svg" alt="twitter">
+      </a>
+      <a href="https://www.facebook.com/">
+        <input type="image" src="img/facebook.svg" alt="facebook">
+      </a>
+      <a href="https://www.youtube.com/">
+        <input type="image" src="img/youtube.svg" alt="youtube">
+      </a>
+      <label for="logo">website by</label>
+      <img src="img/logo-htmlacademy.svg" name="logo" id="logo">
+    </footer>
 
     <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
 
