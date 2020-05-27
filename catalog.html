@@ -17,6 +17,51 @@
       </nav>
     </header>
     <main>
+      <section>
+        <img src="img/sedonablur.jpg" width="1200" height="217" alt="backgroundblur">
+        <div>
+          <h2>Инфраструктура:</h2>
+          <label>
+          <input type="checkbox" value="pool">
+          Бассейн
+          </label>
+          <label>
+            <input type="checkbox" value="parking">
+            Парковка
+          </label>
+          <label>
+            <input type="checkbox" value="wifi">
+            Wi-Fi
+          </label>
+        </div>
+        <div>
+          <h3>Тип жилья</h3>
+          <label>
+            <input type="checkbox" value="hotel">
+            Гостиница
+          </label>
+          <label>
+            <input type="checkbox" value="motel">
+            Мотель
+          </label>
+          <label>
+            <input type="checkbox" value="appartaments">
+            Аппартаменты
+          </label>
+        </div>
+        <div>
+          <table>
+            <caption>Стоимость в сутки (Р):</caption>
+            <tr>
+              <td><output for="rng" id="ongmin">О</output></td>
+              <td><output for="rng" id="ongmax">3000</output></td>
+            </tr>
+          </table>
+          <form>
+            <input type="range" multiple id="rng" min="0" max="3000" step="50" data-values="50 2950">
+            <button type="button" value="show">Показать</button>
+        </div>
+      </section>
         <section>
             <h2>Найдено: 3</h2>
             <p>сортировка:</p>
