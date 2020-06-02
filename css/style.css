@@ -1,0 +1,77 @@
+/* variables */
+:root {
+    --basic-black: #000000;
+    --blue-aim: #81B3D2;
+    --brown-active: #766357;
+    --blue-aim-button: #669EC0;
+    --blue-click-button: #5496BD;
+    --brown-button-basic: #766357;
+    --brown-aim-button: #604E43;
+    --brown-click-button: #503E33;
+    --basic-white: #ffffff;
+}
+/* Global */
+body {
+    min-width: 960;
+    margin: 0;
+  padding: 0;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-navigation {
+    color: var(--basic-black);
+    background-color: transparent;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.main-navigation-wrapper {
+    background-color: var(--basic-white);
+}
+/*Убирает стандартную стилизацию списка*/
+.site-navigation {
+    list-style: none;
+    display: flex;
+}
+/* user navigation */
+.site-navigation a {
+    color: var(--basic-black);
+    display: block;
+    padding: 25px 20px;
+}
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: var(--brown-active);
+}
+/* as a fact about sedona */
+
+.features-sedona {
+    text-align: center;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+.features-preview {
+    color: #333333;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 26;
+}

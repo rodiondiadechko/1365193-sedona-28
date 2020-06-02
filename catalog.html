@@ -3,64 +3,72 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
       <nav>
         <img src="img/logo.svg">
         <ul>
-          <li><a href="blank.html"><h1>Информация</h1></a></li>
-          <li><a href="gallery.html">Фото и Видео</a></li>
-          <li><a href="map.html">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и Видео</a></li>
+          <li><a href="#">Карта штата</a></li>
         </ul>
       </nav>
     </header>
     <main>
+      <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+
       <section>
         <img src="img/sedonablur.jpg" width="1200" height="217" alt="backgroundblur">
-        <div>
-          <h2>Инфраструктура:</h2>
-          <label>
-          <input type="checkbox" value="pool">
-          Бассейн
-          </label>
-          <label>
-            <input type="checkbox" value="parking">
-            Парковка
-          </label>
-          <label>
-            <input type="checkbox" value="wifi">
-            Wi-Fi
-          </label>
-        </div>
-        <div>
-          <h3>Тип жилья</h3>
-          <label>
-            <input type="checkbox" value="hotel">
-            Гостиница
-          </label>
-          <label>
-            <input type="checkbox" value="motel">
-            Мотель
-          </label>
-          <label>
-            <input type="checkbox" value="appartaments">
-            Аппартаменты
-          </label>
-        </div>
-        <div>
+          <h2>Фильтры</h2>
+          <form action="#" method="GET">
+            <fieldset>
+              <legend>Инфраструктура:</legend>
+              <label>
+                <input type="checkbox" value="pool" checked>
+                Бассейн
+                </label>
+                <label>
+                  <input type="checkbox" value="parking">
+                  Парковка
+                </label>
+                <label>
+                  <input type="checkbox" value="wifi">
+                  Wi-Fi
+                </label>
+            </fieldset>
+         
+        
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <label>
+              <input type="checkbox" value="hotel" checked>
+              Гостиница
+            </label>
+            <label>
+              <input type="checkbox" value="motel" checked>
+              Мотель
+            </label>
+            <label>
+              <input type="checkbox" value="appartaments" checked>
+              Аппартаменты
+            </label>
+            </fieldset>
+          
+        
+        <fieldset>
+          <legend>Стоимость в сутки (Р):</legend>
           <table>
-            <caption>Стоимость в сутки (Р):</caption>
             <tr>
               <td><output for="rng" id="ongmin">О</output></td>
               <td><output for="rng" id="ongmax">3000</output></td>
             </tr>
           </table>
-          <form>
+          
             <input type="range" multiple id="rng" min="0" max="3000" step="50" data-values="50 2950">
             <button type="button" value="show">Показать</button>
-        </div>
+          </fieldset>
       </section>
         <section>
             <h2>Найдено: 3</h2>
@@ -81,7 +89,9 @@
           <h2>Лучшие доступные варианты</h2>
           <div>
             <img src="img/amara.jpg" name="amara" id="amara">
+            <a href="#">
             <h3>amara resort & spa</h3>
+          </a>
             <div>
               <p>Гостиница</p>
               <p>От 4000 Р.</p>
@@ -99,7 +109,9 @@
           </div>
         <div>
             <img src="img/desert.jpg" name="desert" id="desert">
+            <a href="#">
             <h3>desert quail inn</h3>
+          </a>
             <div>
               <p>Мотель</p>
               <p>От 3000 Р.</p>
@@ -116,7 +128,9 @@
           </div>
         <div>
             <img src="img/villas.jpg" name="villas" id="villas">
+            <a href="#">
             <h3>villas at poco diablo</h3>
+          </a>
             <div>
               <p>Аппартаменты</p>
               <p>От 2000 Р.</p>
@@ -140,23 +154,23 @@
       </div>
     <ul>
       <li>
-        <a href="https://twitter.com/explore">
+        <a href="#">
           <input type="image" src="img/twitter.svg" alt="twitter">
         </a>
       </li>
       <li>
-        <a href="https://www.facebook.com/">
+        <a href="#">
           <input type="image" src="img/facebook.svg" alt="facebook">
         </a>
       </li>
       <li>
-        <a href="https://www.youtube.com/">
+        <a href="#">
           <input type="image" src="img/youtube.svg" alt="youtube">
         </a>
       </li>
     </ul>
     <span>website by</span>
-    <a href="https://htmlacademy.ru/program">
+    <a href="#">
       <img src="img/logo-htmlacademy.svg" name="logo" id="logo">
     </a>
     </div>

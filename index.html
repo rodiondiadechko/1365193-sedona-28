@@ -3,17 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
+    <link href="css/normalize.css" rel="stylesheet">
+
   </head>
   <body>
     <header>
-      <nav>
-        <img src="img/logo.svg">
-        <ul>
-          <li><a href="blank.html">Информация</a></li>
-          <li><a href="gallery.html">Фото и Видео</a></li>
-          <li><a href="map.html">Карта штата</a></li>
-          <li><a href="catalog.html">Гостиницы</a></li>
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="img/logo.svg">
+        </a>
+        <div class="main-navigation-wrapper">
+        <ul class="site-navigation">
+          <li class="info"><a href="#">Информация</a></li>
+          <li class="media"><a href="#">Фото и Видео</a></li>
+          <li class="map"><a href="#">Карта штата</a></li>
+          <li class="hotels"><a href="catalog.html">Гостиницы</a></li>
         </ul>
+      </div>
       </nav>
     </header>
 
@@ -23,12 +31,21 @@
       <!-- расположил background первым, так как по логике
       далее на него будет накладываться шрифт,
       как его сюда поместить пока не понял -->
+      <div>
+        <img src="img/welcome.svg">
+      </div>
+      <div>
+        <img src="img/tothegorgous.svg">
+      </div>
+      <div>
+        <img src="img/bigsedona.svg">
+      </div>
+
       </section>
 
       <section>
-        <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-          <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        
+        <h1 class="features-sedona">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <p class="features-preview">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
       <section>
       <div>
@@ -40,18 +57,18 @@
       <img src="img/sedonablur.jpg" width="800" height="256">
       </section>
       <section>
-        <div>
-          <img src="img/iconHome.svg">
+        <div class="index-columns">
+          <img src="img/iconhome.svg">
           <h2>Жилье</h2>
           <p>рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
         </div>
         <div>
-          <img src="img/iconBurger.svg">
+          <img src="img/iconburger.svg">
           <h2>Еда</h2>
           <p>всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </div>
         <div>
-          <img src="img/iconGift.svg">
+          <img src="img/icongift.svg">
           <h2>Сувениры</h2>
           <p>не только китайского, но и местного производства!</p>
         </div>
@@ -81,22 +98,24 @@
           <p>большинство едет в гранд-каньон и толпится там</p>
         </div>
       </section>
-        <h2>Заинтересовались?<br>
-           Укажите предполагаемые даты поездки,<br>
+        <h2>Заинтересовались?
+           Укажите предполагаемые даты поездки,
             и мы покажем вам лучшие предложения гостиниц в седоне</h2>
       </section>
 
       <section>
-        <h2>Поиск гостиницы в седоне</h2><br>
+        <form action="#" method="POST">
+        <h2>Поиск гостиницы в седоне</h2>
         <label for="arrival-date">Дата прибытия</label>
-        <input type="date" name="arrival-date" id="arrival-date"><br>
+        <input type="date" name="arrival-date" id="arrival-date" placeholder="01.01.2020">
         <label for="check-in-date">Дата выезда</label>
-        <input type="date" name="check-in-date" id="check-in-date"><br>
+        <input type="date" name="check-in-date" id="check-in-date" placeholder="01.01.2020">
         <label for="adult">Взрослые</label>
-        <input type="number" name="adult" id="adult" min="0" max="10" step="1"><br>
+        <input type="number" name="adult" id="adult" min="0" max="10" step="1" placeholder="1">
         <label for="kids">Дети</label>
-        <input type="number" name="kids" id="kids" min="0" max="10" step="1"><br>
-        <input type="button" value="Найти">
+        <input type="number" name="kids" id="kids" min="0" max="10" step="1" placeholder="1">
+        <button type="button" value="find">Найти</button>
+      </form>
       </section>
     </main>
     <footer>
@@ -106,23 +125,23 @@
       </div>
         <ul>
         <li>
-          <a href="https://twitter.com/explore">
+          <a href="#">
             <input type="image" src="img/twitter.svg" alt="twitter">
           </a>
         </li>
         <li>
-          <a href="https://www.facebook.com/">
+          <a href="#">
             <input type="image" src="img/facebook.svg" alt="facebook">
           </a>
         </li>
         <li>
-          <a href="https://www.youtube.com/">
+          <a href="#">
             <input type="image" src="img/youtube.svg" alt="youtube">
           </a>
         </li>
       </ul>
       <span>website by</span>
-      <a href="https://htmlacademy.ru/program">
+      <a href="#">
         <img src="img/logo-htmlacademy.svg" name="logo" id="logo">
       </a>
       
