@@ -4,16 +4,24 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
+    <link href="css/normalize.css" rel="stylesheet">
+
   </head>
   <body>
     <header>
-      <nav>
-        <img src="img/logo.svg">
-        <ul>
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и Видео</a></li>
-          <li><a href="#">Карта штата</a></li>
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="img/logo.svg">
+        </a>
+        <div class="main-navigation-wrapper">
+        <ul class="site-navigation">
+          <li class="info"><a href="#">Информация</a></li>
+          <li class="media"><a href="#">Фото и Видео</a></li>
+          <li class="map"><a href="#">Карта штата</a></li>
+          <li class="visally-hidden"><a href="catalog.html">Гостиницы</a></li>
         </ul>
+      </div>
       </nav>
     </header>
     <main>

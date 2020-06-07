@@ -41,6 +41,10 @@ img {
     font-size: 14px;
     line-height: 26px;
 }
+.main-header-logo {
+    position: absolute;
+
+}
 
 .main-navigation-wrapper {
     background-color: var(--basic-white);
@@ -61,17 +65,27 @@ img {
     color: var(--brown-active);
 }
 /* as a fact about sedona */
+.site-caption {
+    display: block;
+    text-align: center;
+}
 
 .features-sedona {
-    text-align: center;
     font-size: 21px;
     line-height: 26px;
     text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
 }
 .features-preview {
     color: #333333;
-    text-align: center;
     text-transform: uppercase;
     font-size: 14px;
-    line-height: 26;
+    line-height: 26px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+fieldset {
+    display: flex;
 }
